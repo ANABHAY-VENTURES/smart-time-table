@@ -34,8 +34,8 @@ HTML, CSS, and vanilla JavaScript. `pdf-renamer.html` additionally uses the [pdf
 ## Setup
 
 ```bash
-git clone https://github.com/D-Majumder/Smart-Time-Table.git
-cd Smart-Time-Table
+git clone https://github.com/D-Majumder/smart-time-table.git
+cd smart-time-table
 ```
 
 Open `index.html` or `pdf-renamer.html` directly in a browser, or serve the folder with any static file server.
