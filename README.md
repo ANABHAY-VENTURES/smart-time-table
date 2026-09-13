@@ -1,57 +1,47 @@
-<h1 align="center" id="title">Smart Time Table</h1>
+# Smart Time Table
 
-<p align="center"><img src="https://socialify.git.ci/D-Majumder/Smart-Time-Table/image?language=1&amp;owner=1&amp;name=1&amp;stargazers=1&amp;theme=Light" alt="project-image"></p>
+A static class-schedule display page, plus a standalone PDF-renaming utility.
 
-<p id="description">An innovative intelligent scheduling system designed to generate optimized timetables by dynamically handling constraints resolving conflicts and adapting to real-time inputs. Whether you're managing classroom schedules employee shifts or personal routines this project aims to simplify and automate the heavy lifting of timetable management.</p>
+## Live demo
 
-<p align="center"><img src="https://img.shields.io/badge/Smart-Time_Table-Red" alt="shields"></p>
+https://2bca27.pages.dev
 
-<h2>🚀 Demo</h2>
+## Overview
 
-[https://2bca27.pages.dev](https://2bca27.pages.dev)
+This repository contains two independent, self-contained HTML tools:
 
-<h2>Project Screenshots:</h2>
+- **`index.html`** — a class timetable page ("Time Table 1st Year") that shows the current and upcoming class based on a hardcoded weekly schedule, with day/night theming and a per-day schedule viewer.
+- **`pdf-renamer.html`** — a standalone, client-side PDF renaming tool (built with `pdf-lib`) that lets you rename and re-download a PDF file entirely in the browser, with no server involved.
 
-<img src="https://drive.google.com/file/d/1x4m2u8xqF0N1uvHTfTjNdWGbF39SjKXl" alt="project-screenshot" width="1000https://drive.google" height="400/">
+Both are plain static HTML/CSS/JavaScript pages with no build step and no backend.
 
-<img src="https://drive.google.com/file/d/1b7MiMWIwkvZFplGVFuNEb6jPetwsi2ck/view?usp=drive_link" alt="project-screenshot" width="1000" height="400/">
+## Features
 
-  
-  
-<h2>🧐 Features</h2>
+**`index.html`:**
+- Shows the current class and the next upcoming class based on the time of day.
+- A per-day schedule viewer covering Monday through Friday.
+- An announcements section.
+- Day/night theming.
 
-Here're some of the project's best features:
+**`pdf-renamer.html`:**
+- Rename a PDF file and download the renamed copy, entirely client-side.
+- Day/night theming, consistent with `index.html`.
 
-*   Dynamic Scheduling: Automatically optimizes schedules in real time using smart algorithms.
-*   Conflict Resolution: Detects overlapping entries and resolves conflicts by prioritizing critical constraints.
-*   User-Friendly Interface: Designed for seamless integration allowing easy data input and quick adjustments.
-*   Modular Design: Features are built in distinct modules making it easy to extend or tweak the system to fit specialized needs.
-*   Adaptability: Perfect for educational institutions corporates or personal planning this solution scales to different environments and requirements.
+## Tech stack
 
-<h2>🛠️ Installation Steps:</h2>
+HTML, CSS, and vanilla JavaScript. `pdf-renamer.html` additionally uses the [pdf-lib](https://pdf-lib.js.org/) library, loaded from a CDN.
 
-<p>1. Clone the Repository:</p>
+## Setup
 
-```
-git clone https://github.com/yourusername/smart-time-table.git cd smart-time-table
-```
-
-<p>2. Install Dependencies:</p>
-
-```
-pip install -r requirements.txt
+```bash
+git clone https://github.com/D-Majumder/Smart-Time-Table.git
+cd Smart-Time-Table
 ```
 
-<p>3. Run the Application:</p>
+Open `index.html` or `pdf-renamer.html` directly in a browser, or serve the folder with any static file server.
 
-```
-python main.py
-```
+**Note:** the weekly schedule shown in `index.html` is hardcoded in the page's JavaScript — editing it means updating the schedule data directly in the file.
 
-<h2>🍰 Contribution Guidelines:</h2>
+## License
 
-Contributions are welcome! If you'd like to help improve the Smart Time Table Project please check out our contributing guidelines for more details.
-
-<h2>🛡️ License:</h2>
-
-This project is licensed under the MIT
+This project is licensed under the **GNU General Public License v3.0**. See [LICENSE](./LICENSE) for the full text.
